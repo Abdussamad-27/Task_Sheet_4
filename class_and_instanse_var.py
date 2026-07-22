@@ -2,14 +2,17 @@
 
 class Employee:
     company_name="Digital Dreams" #class variable accessed by every object
-    def __init__(self,emp_id,emp_name):
-        self.emp_id=emp_id        #instance variable only accessed by called object
-        self.emp_name=emp_name
+    def __init__(self,emp_name):
+           
+        self.emp_name=emp_name  #instance variable only accessed by called object
+        # self.age=age
 
         company_name="Digital Dreams"
 
-c1=Employee(3,"Rahul")
+c1=Employee("Rahul")
+c1.emp_id=9   
 c2=Employee(4,"Ram")
+c2.emp_id=19 
 
 print("employee detials")
 # Accessing class and instance variable
